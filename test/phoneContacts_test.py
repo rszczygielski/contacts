@@ -2,7 +2,7 @@ import unittest
 import os
 import sys
 from unittest import TestCase
-sys.path.insert(1, '/home/radeksz/Documents/python_VSC/personal_classes/contacts/contacts')
+sys.path.append("..")
 from contacts.contacts import Contacts
 from contacts.contacts import Number
 from contacts.contacts import NumberType
@@ -15,7 +15,7 @@ class PhoneContactsTest(TestCase):
     @classmethod
     def setUpClass(cls):
         # cls.contactFile = "/home/radeksz/Documents/python_VSC/personal_classes/contacts/contacts/contactsTest.txt"
-        cls.contactFile = "/mnt/c/Users/radek/Desktop/PythonVSD/personal_classes/contacts/contacts/contacts.txt"
+        cls.contactFile = "/contactsTest.txt"
 
     def tearDown(self):
         if os.path.isfile(self.__class__.contactFile):
