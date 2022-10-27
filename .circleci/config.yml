@@ -1,0 +1,23 @@
+version: 2.1
+
+
+jobs:
+  build:
+    docker:
+      - image: cimg/python:3.10.1
+    
+
+    steps:
+      - run:
+          name: Instal reqirements
+          command: |
+            git clone https://github.com/rszczygielski/myLogger
+            cd myLogger/
+            pip3 install .
+      
+      - checkout
+      - run:
+          name: Run tests
+          command: |
+            cd test/
+            python3 phoneContacts_test.py
