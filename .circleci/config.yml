@@ -8,6 +8,7 @@ jobs:
     
 
     steps:
+      - checkout
       - run:
           name: Instal reqirements
           command: |
@@ -15,7 +16,6 @@ jobs:
             cd myLogger/
             pip3 install .
       
-      - checkout
       - run:
           name: Run tests
           command: |
