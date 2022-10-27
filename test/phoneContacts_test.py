@@ -15,7 +15,7 @@ class PhoneContactsTest(TestCase):
     @classmethod
     def setUpClass(cls):
         # cls.contactFile = "/home/radeksz/Documents/python_VSC/personal_classes/contacts/contacts/contactsTest.txt"
-        cls.contactFile = "/contactsTest.txt"
+        cls.contactFile = "contactsTest.txt"
 
     def tearDown(self):
         if os.path.isfile(self.__class__.contactFile):
