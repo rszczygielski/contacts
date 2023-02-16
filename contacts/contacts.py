@@ -3,6 +3,7 @@ from enum import Enum, auto
 import os
 # testy jednostkowe i intregracyjne, jednoskowe to takie które kod testuje sam siebie, a integracujne to są takie które są napisane w innym programie
 
+
 class NumberType(Enum):
     WORK = "WORK"
     FAX = "FAX"
